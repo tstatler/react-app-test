@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const _webexApp = new window.Webex.Application();
+  _webexApp.onReady().then(() => {
+    console.log("Webex App Ready");
+  });
+  
   return (
     <div className="App">
       <header className="App-header">
